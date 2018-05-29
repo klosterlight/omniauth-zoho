@@ -1,6 +1,3 @@
-# $:.push File.expand_path("../lib", __FILE__)
-
-# Maintain your gem's version:
 require File.expand_path(
   File.join('..', 'lib', 'omniauth', 'zoho', 'version'),
   __FILE__
@@ -9,7 +6,7 @@ require File.expand_path(
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "omniauth-zoho"
-  s.version     = Zoho::Omniauth::VERSION
+  s.version     = Omniauth::Zoho::VERSION
   s.authors     = ["KlosterLight"]
   s.email       = ["gerry.rendon@gmail.com"]
   s.homepage    = "TODO"
@@ -23,8 +20,8 @@ Gem::Specification.new do |s|
  
   s.required_ruby_version = '>= 2.1'
 
-  s.add_runtime_dependency 'omniauth', '>= 1.1.1'
-  s.add_runtime_dependency 'omniauth-oauth2', '>=1.5'
+  s.add_runtime_dependency 'omniauth', '~> 1.1', '>= 1.1.1'
+  s.add_runtime_dependency 'omniauth-oauth2', '~> 1.5'
 
-  s.add_development_dependecy 'rake', '~> 12.0'
+  s.add_development_dependency 'rake', '~> 12.0'
 end
