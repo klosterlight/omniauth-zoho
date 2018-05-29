@@ -1,0 +1,1 @@
+require 'omniath/strategies/zoho'
